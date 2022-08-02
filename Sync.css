@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Unica+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.sync {
+  width: 100%;
+  height: 135vh;
+  background: #2c2c2e;
+}
+
+.sync__nav {
+  display: flex;
+  width: 100%;
+  height: 62px;
+  background: #2c2c2e;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media screen and (max-width: 835px) {
+  .sync__nav {
+    width: 100%;
+  }
+}
+
+.sync__banner {
+  width: 100%;
+  height: 144px;
+  background: #2c2c2e;
+  box-shadow: 8px 8px 16px #232325;
+}
+
+.sync__banner-style {
+  display: flex;
+  flex-direction: column;
+  row-gap: 19px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.banner__yellowtext {
+  color: #d9a86c;
+}
+
+.banner__text1 {
+  font-family: "Unica One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.banner__text2 {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 1440px) {
+  .banner__text1 {
+    display: flex;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .banner__text2 {
+    display: flex;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .banner__text1 {
+    display: flex;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .banner__text2 {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .banner__text1 {
+    display: flex;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 235px;
+    padding-left: 43px;
+  }
+
+  .banner__text2 {
+    display: flex;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+/* leftside images section */
+.leftside {
+  width: 416px;
+  height: 648px;
+  display: flex;
+  flex-direction: column;
+  margin: 7px 960px 95px 64px;
+  overflow-y: scroll;
+}
+
+.project-showcase {
+  font-family: "Unica One";
+  font-style: normal;
+  position: absolute;
+  bottom: 3.29px;
+  left: 0px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 32px;
+  color: #d9a86c;
+  transform: rotate(-90deg);
+}
+
+.leftside__image-section1 {
+  height: 648px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 11.93px;
+  margin-left: 80px;
+  margin-top: 55.1px;
+  position: absolute;
+}
+
+.frame-images {
+  width: 118.95px;
+  height: 178.61px;
+}
+
+.leftside__image-section2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 230.37px;
+  margin-top: 55.1px;
+  gap: 12.18px;
+}
+
+.leftside::-webkit-scrollbar {
+  display: none;
+}
+
+.sync__line {
+  width: 645px;
+  height: 0px;
+  margin-left: 237px;
+  position: absolute;
+  bottom: 150px;
+  transform: rotate(90deg);
+  border: 1px solid #393939;
+  box-shadow: 3px 3px 6px #151516, -3px -3px 6px #434346;
+}
+
+/* rightside */
+.rightside {
+  display: flex;
+  column-gap: 72px;
+  margin-left: 668px;
+  position: absolute;
+  top: 250px;
+}
+
+.display-image__description {
+  position: relative;
+  bottom: 35px;
+}
+
+.display-image {
+  width: 303px;
+  height: 431px;
+  border-radius: 18.168px;
+}
+
+.play-btn {
+  width: 55px;
+  height: 55px;
+  margin-left: 400px;
+  position: absolute;
+  top: 0px;
+}
+
+h3 {
+  font-family: "Unica One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 32px;
+  color: #d9a86c;
+  margin-top: 10px;
+}
+
+.yellow-line {
+  width: 56.88px;
+  height: 0px;
+  border: solid #d9a86c;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+h5 {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #797979;
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+.description__details {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-top: 2px;
+}
+
+.title__song {
+  font-family: "Unica One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+.songs-list1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0px;
+}
+
+.song-list-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 240px;
+  position: absolute;
+  top: 275px;
+}
+
+.songs-list1 > h3 {
+  margin-top: 10px;
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #797979;
+}
+
+.songs-list1 > h5 {
+  font-size: 10px;
+  margin: 0px;
+}
+
+.list-line {
+  transform: rotate(90deg);
+  width: 123px;
+  height: 0px;
+  opacity: 0.2;
+  position: absolute;
+  top: 350px;
+  margin-left: 150px;
+  border: 1px solid #797979;
+}
+
+.scroll {
+  margin-left: 100px;
+  height: 200px;
+  width: 8px;
+  margin-top: 240px;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: inset 5px 5px 10px #212122, inset -5px -5px 10px #37474a;
+}
+
+/* ::-webkit-scrollbar-track {
+  background: #2c2c2e;
+} */
+
+.scroll::-webkit-scrollbar-thumb {
+  /* border: 9px solid #d9a86c; */
+  background: #d9a86c;
+  border-radius: 20%;
+}
+
+.sync__line-below {
+  width: 312px;
+  margin-left: 900px;
+  position: absolute;
+  top: 717px;
+  border: 1px solid #797979;
+  background: #797979;
+}
+
+.sync__film-festival-section > h2 {
+  font-family: "Unica One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-left: 980px;
+  position: absolute;
+  top: 725px;
+}
+
+.film-frames {
+  display: flex;
+  column-gap: 17px;
+  margin-left: 590px;
+  position: absolute;
+  top: 790px;
+}
+
+@media screen and (max-width: 834px) {
+  .leftside {
+    position: absolute;
+    width: 172px;
+    height: 719px;
+    margin-left: 0px;
+    top: 170px;
+    overflow-y: scroll;
+  }
+  .project-showcase {
+    margin-bottom: 580px;
+    font-size: 18.3173px;
+    line-height: 20px;
+    margin-right: 25px;
+    left: -18px;
+  }
+  .footer {
+    visibility: hidden;
+  }
+  .sync__line {
+    margin-left: -130px;
+    bottom: 120px;
+  }
+  .display-image {
+    /* position: absolute; */
+    /* left: -450px;
+    bottom: 124px;
+    width: 293px;
+    height: 416.76px; */
+  }
+}
+
+@media screen and (max-width: 320px) {
+}
