@@ -7,22 +7,8 @@
 
 .sync {
   width: 100%;
-  height: 135vh;
+  height: fit-content;
   background: #2c2c2e;
-}
-
-.sync__nav {
-  display: flex;
-  width: 100%;
-  height: 62px;
-  background: #2c2c2e;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-@media screen and (max-width: 835px) {
-  .sync__nav {
-    width: 100%;
-  }
 }
 
 .sync__banner {
@@ -30,14 +16,33 @@
   height: 144px;
   background: #2c2c2e;
   box-shadow: 8px 8px 16px #232325;
-}
-
-.sync__banner-style {
   display: flex;
   flex-direction: column;
-  row-gap: 19px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.sync__nav {
+  width: 100%;
+  height: 62px;
+}
+
+.sync__banner > h2 {
+  font-family: "Unica One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  color: white;
+}
+
+.sync__banner > h4 {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
   color: white;
 }
 
@@ -45,96 +50,18 @@
   color: #d9a86c;
 }
 
-.banner__text1 {
-  font-family: "Unica One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 35px;
-}
-
-.banner__text2 {
-  font-family: "Abel";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-}
-
-@media screen and (max-width: 1440px) {
-  .banner__text1 {
-    display: flex;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 35px;
-  }
-
-  .banner__text2 {
-    display: flex;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-  }
-}
-
-@media screen and (max-width: 834px) {
-  .banner__text1 {
-    display: flex;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  .banner__text2 {
-    display: flex;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .banner__text1 {
-    display: flex;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 235px;
-    padding-left: 43px;
-  }
-
-  .banner__text2 {
-    display: flex;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-  }
-}
-
-/* leftside images section */
-.leftside {
-  width: 416px;
-  height: 648px;
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  margin: 7px 960px 95px 64px;
-  overflow-y: scroll;
+  justify-content: space-evenly;
 }
 
-.project-showcase {
-  font-family: "Unica One";
-  font-style: normal;
-  position: absolute;
-  bottom: 3.29px;
-  left: 0px;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 32px;
-  color: #d9a86c;
-  transform: rotate(-90deg);
+.left-section {
+  width: 100%;
+  flex: 0 1 20%;
+  margin-top: 7px;
+  padding: 18px;
 }
 
 .leftside__image-section1 {
@@ -143,21 +70,14 @@
   flex-direction: column;
   padding: 0px;
   gap: 11.93px;
-  margin-left: 80px;
-  margin-top: 55.1px;
+  margin-left: 40px;
   position: absolute;
-}
-
-.frame-images {
-  width: 118.95px;
-  height: 178.61px;
 }
 
 .leftside__image-section2 {
   display: flex;
   flex-direction: column;
-  margin-left: 230.37px;
-  margin-top: 55.1px;
+  margin-left: 180px;
   gap: 12.18px;
 }
 
@@ -165,29 +85,42 @@
   display: none;
 }
 
-.sync__line {
-  width: 645px;
-  height: 0px;
-  margin-left: 237px;
+.project-showcase {
+  color: #d9a86c;
+  transform: rotate(-90deg);
+  font-family: "Unica One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 32px;
   position: absolute;
-  bottom: 150px;
-  transform: rotate(90deg);
+  bottom: 3.29px;
+  left: 0px;
+}
+
+.divider {
+  margin-top: 20px;
+  height: 600px;
   border: 1px solid #393939;
   box-shadow: 3px 3px 6px #151516, -3px -3px 6px #434346;
 }
 
-/* rightside */
-.rightside {
+.right-section {
+  margin-top: 20px;
+  flex: 0 1 50%;
   display: flex;
-  column-gap: 72px;
-  margin-left: 668px;
-  position: absolute;
-  top: 250px;
+  flex-direction: column;
 }
 
-.display-image__description {
-  position: relative;
-  bottom: 35px;
+.col-1 {
+  flex: 0 1 40%;
+  /* border: 1px solid blue; */
+}
+
+.right-section__top-wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
 }
 
 .display-image {
@@ -196,15 +129,26 @@
   border-radius: 18.168px;
 }
 
-.play-btn {
-  width: 55px;
-  height: 55px;
-  margin-left: 400px;
-  position: absolute;
-  top: 0px;
+.col-2 {
+  flex: 0 1 60%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-h3 {
+.display-image__description {
+  width: 100%;
+  /* border: 1px solid greenyellow; */
+}
+
+.row-alignment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.row-alignment > h3 {
   font-family: "Unica One";
   font-style: normal;
   font-weight: 400;
@@ -219,17 +163,16 @@ h3 {
   height: 0px;
   border: solid #d9a86c;
   border-radius: 10px;
-  margin-top: 5px;
 }
 
-h5 {
+.display-image__description > h5 {
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
   color: #797979;
-  margin-top: 8px;
+  margin-top: 5px;
   margin-bottom: 40px;
 }
 
@@ -253,126 +196,92 @@ h5 {
   margin-top: 40px;
 }
 
-.songs-list1 {
+.songs-list {
   display: flex;
-  flex-direction: column;
-  row-gap: 0px;
+  flex-direction: row;
+  column-gap: 28px;
+  height: 135.24px;
+  overflow-y: scroll;
 }
 
-.song-list-right {
-  display: flex;
-  flex-direction: column;
-  margin-left: 240px;
-  position: absolute;
-  top: 275px;
-}
-
-.songs-list1 > h3 {
-  margin-top: 10px;
+.song-details {
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #797979;
+  /* border: 1px solid red; */
+  width: 100%;
 }
 
-.songs-list1 > h5 {
-  font-size: 10px;
-  margin: 0px;
+.songs-list__left {
+  flex: 0 1 40%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10.79px;
 }
 
-.list-line {
-  transform: rotate(90deg);
-  width: 123px;
-  height: 0px;
+.songs-list__right {
+  flex: 0 1 40%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10.79px;
+}
+
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  row-gap: 3.17px;
+}
+
+.divider-2 {
   opacity: 0.2;
-  position: absolute;
-  top: 350px;
-  margin-left: 150px;
   border: 1px solid #797979;
+  height: 280px;
 }
 
-.scroll {
-  margin-left: 100px;
-  height: 200px;
-  width: 8px;
-  margin-top: 240px;
-  border-radius: 8px;
-  border-style: none;
+.songs-list::-webkit-scrollbar {
+  width: 20px;
+}
+
+.songs-list::-webkit-scrollbar-track {
+  border-radius: 9px;
+  background: #2c2c2e;
   box-shadow: inset 5px 5px 10px #212122, inset -5px -5px 10px #37474a;
 }
 
-/* ::-webkit-scrollbar-track {
-  background: #2c2c2e;
-} */
-
-.scroll::-webkit-scrollbar-thumb {
-  /* border: 9px solid #d9a86c; */
+.songs-list::-webkit-scrollbar-thumb {
   background: #d9a86c;
-  border-radius: 20%;
+  border-radius: 9px;
 }
 
-.sync__line-below {
+.divider-3 {
   width: 312px;
-  margin-left: 900px;
-  position: absolute;
-  top: 717px;
-  border: 1px solid #797979;
+  border-radius: 1px;
   background: #797979;
+  margin: 31px auto 0;
 }
 
-.sync__film-festival-section > h2 {
+.film-festival-section {
   font-family: "Unica One";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
   color: #ffffff;
-  margin-left: 980px;
-  position: absolute;
-  top: 725px;
+  margin: 11px auto 0;
 }
 
 .film-frames {
   display: flex;
+  flex-direction: row;
   column-gap: 17px;
-  margin-left: 590px;
-  position: absolute;
-  top: 790px;
+  margin-top: 13px;
 }
 
-@media screen and (max-width: 834px) {
-  .leftside {
-    position: absolute;
-    width: 172px;
-    height: 719px;
-    margin-left: 0px;
-    top: 170px;
-    overflow-y: scroll;
-  }
-  .project-showcase {
-    margin-bottom: 580px;
-    font-size: 18.3173px;
-    line-height: 20px;
-    margin-right: 25px;
-    left: -18px;
-  }
-  .footer {
-    visibility: hidden;
-  }
-  .sync__line {
-    margin-left: -130px;
-    bottom: 120px;
-  }
-  .display-image {
-    /* position: absolute; */
-    /* left: -450px;
-    bottom: 124px;
-    width: 293px;
-    height: 416.76px; */
-  }
-}
-
-@media screen and (max-width: 320px) {
+.film-frames > img {
+  width: 197.55px;
+  height: 86.05px;
 }
